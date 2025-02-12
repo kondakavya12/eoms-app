@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const BASE_URL = 'http://localhost:8080';
-const BASE_URL = 'https://eoms-backend-production.up.railway.app/';  // Update with backend URL
+const BASE_URL = 'https://eoms-backend-production.up.railway.app/';
 
 // Fetch all products from backend
 export const fetchProducts = () => axios.get(`${BASE_URL}/products/all`);

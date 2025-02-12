@@ -1,0 +1,356 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: hsla(60, 1%, 64%, 0.621);
+}
+
+.container {
+  margin: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgb(63, 63, 63);
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: left;
+  margin: 25px 0 20px 0;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: black;
+}
+
+.product-table tr:nth-child(odd) {
+  background-color: hsl(0, 5%, 87%);
+}
+
+.product-table, .order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.product-table th, .product-table td, .order-table th, .order-table td {
+  border: 1px solid hsl(0, 0%, 79%);
+  padding: 8px;
+}
+
+.order-table th, .product-table th {
+  background-color: hsla(0, 1%, 13%, 0.881);
+  color: white;
+}
+
+.order-table tbody, .product-table tbody {
+  text-align: center;
+}
+
+.click-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.click-btn {
+  padding: 15px 20px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  border: none;
+  cursor: pointer;
+  background: hsla(168, 91%, 22%, 0.856);
+  color: white;
+  box-shadow: 0px 0px 5px 0px hsl(167, 35%, 8%);
+  border-radius: 3px;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.click-btn:hover {
+  background: hsl(168, 91%, 20%);
+}
+
+.edit-btn {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background: hsl(60, 86%, 66%); 
+  color: white;
+}
+
+.delete-btn {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background: hsla(0, 95%, 50%, 0.726); 
+  color: white;
+}
+
+.search-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 5px;
+  color: hsla(0, 4%, 13%, 0.81);
+}
+
+.export-btn {
+  padding: 12px 17px;
+  margin: 5px 5px 5px 0.5px;
+  border: none;
+  cursor: pointer;
+  background: hsl(46, 94%, 32%); 
+  color: white;
+  font-weight: bold;
+}
+.export-btn:hover {
+  background: hsl(46, 94%, 29%);
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 10px;
+  background: hsla(0, 1%, 13%, 0.881);
+  color: white;
+  text-align: center;
+}
+
+/* ORDER FORM STYLING */
+.form-container {
+  padding: 20px;
+  border: 1px solid hsl(0, 0%, 80%);
+  max-width: 75%;
+  margin: 5px auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+.form-container h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  width: 200px;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid hsl(0, 0%, 80%);
+}
+
+/* .form-group input[readonly] {
+  background-color: #f1f1f1;
+} */
+
+/* Align quantity control input with other input boxes */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.quantity-control button {
+  width: 45px;
+  height: 45px;
+  border: 1px solid hsl(0, 0%, 80%);
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.quantity-control input {
+  width: 100%; /* Ensures it takes up remaining space */
+  text-align: center;
+  font-size: 18px;
+  padding: 8px;
+  border: 1px solid hsl(0, 0%, 80%);
+  height: 40px; /* Matches the height of the buttons */
+  box-sizing: border-box;
+  /* font-weight: bold; */
+}
+
+/* Adjust for uniform height of input and buttons in the form */
+.form-group input,
+.form-group select,
+.quantity-control input,
+.quantity-control button {
+  height: 40px;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  padding: 12px 17px;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin-right: 10px;
+}
+
+.form-actions button[type="submit"] {
+  background-color: hsl(108, 88%, 32%);
+  color: white;
+  border: none;
+}
+.form-actions button[type="submit"]:hover {
+  background-color: hsl(108, 88%, 30%);
+}
+
+.form-actions button[type="button"] {
+  background-color: hsl(4, 94%, 45%);
+  color: white;
+  border: none;
+}
+.form-actions button[type="button"]:hover {
+  background-color: hsl(4, 94%, 40%);
+}
+
+/* General responsive styling */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+  .click-btn {
+    font-size: 1.15em;
+  }
+  .product-table, .order-table {
+    font-size: 0.9em;
+  }
+  .search-bar {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 85%;
+  }
+  .click-btn {
+    padding: 12px 16px;
+    font-size: 1.15em;
+  }
+  .product-table th, .product-table td, .order-table th, .order-table td {
+    padding: 6px;
+  }
+  .search-bar {
+    width: 70%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.25em;
+  }
+  .click-btn {
+    font-size: 1.1em;
+    padding: 12px 18px;
+  }
+  .product-table, .order-table {
+    font-size: 0.8em;
+  }
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .order-form {
+    width: 100%;
+  }
+  .form-container {
+    width: 90%;
+  }
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-group label {
+    margin-bottom: 5px;
+    width: auto;
+  }
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .quantity-control {
+    width: 100%;
+  }
+  .quantity-control button {
+    width: 35px;
+    height: 35px;
+  }
+  .quantity-control input {
+    width: 60%;
+  }
+  .form-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-actions button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .click-btn {
+    font-size: 1em;
+    padding: 12px 15px;
+  }
+  .order-table th, .product-table th {
+    font-size: 0.8em;
+  }
+  .search-bar {
+    font-size: 0.9em;
+    margin: 5px 0;
+  }
+  .footer {
+    font-size: 0.8em;
+  }
+}

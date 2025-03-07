@@ -44,7 +44,7 @@ h2 {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
-  /* min-width: 900px; Ensures the table remains wide */
+  /* min-width: 900px; */
 }
 
 .order-table {
@@ -258,8 +258,8 @@ h2 {
   background-color: hsl(4, 94%, 40%);
 }
 
+/* Responsive Design */
 @media screen and (max-width: 768px) {
-  
   h1 {
     font-size: 1.8em;
   }
@@ -285,11 +285,11 @@ h2 {
 
   .order-form {
     display: block; /* Ensures horizontal scrolling doesn't affect the form */
-    min-width: 500px; /* Prevents excessive shrinking */
+    min-width: 500px;
   }
 
   .form-group {
-    flex-wrap: nowrap; /* Ensures the label and input remain in one line */
+    flex-wrap: nowrap;
     white-space: nowrap;
   }
 }

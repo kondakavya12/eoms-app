@@ -2,7 +2,7 @@ import React from 'react';
 
 function ProductTable({ products }){
   return (
-    <div className="table-wrapper">
+    // <div className="table-wrapper">
     <table className="product-table">
       <thead>
         <tr>
@@ -27,7 +27,7 @@ function ProductTable({ products }){
         )}
       </tbody>
     </table>
-    </div>
+    // </div>
   );
 }
 

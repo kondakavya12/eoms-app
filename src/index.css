@@ -1,15 +1,26 @@
 body {
   font-family: Arial, sans-serif;
   background-color: hsla(60, 1%, 64%, 0.621);
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 .container {
-  margin: 20px;
+  margin: 12px;
   background: white;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgb(63, 63, 63);
   max-width: 100%;
+  overflow: auto;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  display: block;
+  padding-bottom: 10px;
+  white-space: nowrap; /* Prevents table from shrinking */
 }
 
 h1 {
@@ -33,6 +44,7 @@ h2 {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
+  min-width: 900px; /* Ensures the table remains wide */
 }
 
 .product-table th, .product-table td, .order-table th, .order-table td {
@@ -242,8 +254,44 @@ h2 {
   background-color: hsl(4, 94%, 40%);
 }
 
+@media screen and (max-width: 768px) {
+  
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  .product-table {
+    font-size: 0.8em;
+  }
+
+  .click-btn {
+    font-size: 1.1em;
+    padding: 12px 18px;
+  }
+  
+  .form-container {
+    overflow: auto; /* Enables both horizontal and vertical scrolling */
+    white-space: nowrap; /* Prevents shrinking */
+    max-width: 100%;
+  }
+
+  .order-form {
+    display: block; /* Ensures horizontal scrolling doesn't affect the form */
+    min-width: 500px; /* Prevents excessive shrinking */
+  }
+
+  .form-group {
+    flex-wrap: nowrap; /* Ensures the label and input remain in one line */
+    white-space: nowrap;
+  }
+}
+
 /* General responsive styling */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .container {
     max-width: 90%;
   }
@@ -353,4 +401,4 @@ h2 {
   .footer {
     font-size: 0.8em;
   }
-}
+} */

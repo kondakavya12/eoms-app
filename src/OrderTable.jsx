@@ -11,6 +11,7 @@ function OrderTable({ orders, searchQuery, onEdit, onDelete }){
   );
 
   return (
+    <div className="table-wrapper">
     <table className="order-table">
       <thead>
         <tr>
@@ -57,6 +58,7 @@ function OrderTable({ orders, searchQuery, onEdit, onDelete }){
         )}
       </tbody>
     </table>
+    </div>
   );
 }
 
